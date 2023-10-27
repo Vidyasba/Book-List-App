@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Library</title>
+</head>
+<body>
+    
+    <div id="app">
+        <h1>My Personal Library</h1>
+        <button onclick="showAddBookForm()">Add New Book</button>
+        <div id="addBookForm" class="hidden">
+          <label>Title: <input type="text" id="title" /></label>
+          <label>Author: <input type="text" id="author" /></label>
+          <label>Genre: <input type="text" id="genre" /></label>
+          <label>Description: <textarea id="description"></textarea></label>
+          <label>Read: <input type="checkbox" id="read" /></label>
+          <button onclick="addBook()">Add Book</button>
+          <button onclick="hideAddBookForm()">Cancel</button>
+        </div>
+        <div id="bookList"></div>
+      </div>
+
+
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
